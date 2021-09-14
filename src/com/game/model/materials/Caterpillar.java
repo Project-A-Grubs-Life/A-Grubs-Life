@@ -21,12 +21,16 @@ public class Caterpillar {
         this.lastAction = "";
         this.winner = false;
     }
+
     public void setCurrentLocation(Location location){ //we should move this to the bottom
+        System.out.println("Moving from " + currentLocation + " to " + location);
         this.currentLocation = location;
     }
+
     public Location getCurrentLocation(){
         return this.currentLocation;
     }
+
     public void eat(Leaf leaf){
         setHealth(getHealth() + 10);
         if( (getExperience() + leaf.getXp()) >= maxExperience && level < maxLevel) {
@@ -40,15 +44,16 @@ public class Caterpillar {
 
         }
     }
+
     public void levelUp(){
         setStrength(strength + 50);
         setLevel(level + 1);
         if(getLevel() == maxLevel- 1){
             this.setLastAction("You are level 2! You feel slightly stronger and more healthy.");
         }
-        else if(getLevel()== maxLevel) {
+        else if (getLevel()== maxLevel) {
             this.setLastAction("You have reached level 3! You are now a butterfly... from now on you can use acid attacks.");
-            }
+        }
 
     }
 
@@ -57,6 +62,7 @@ public class Caterpillar {
             setHealth(getHealth() + 1);
         }
     }
+
     public int getHealth() {
         return health;
     }

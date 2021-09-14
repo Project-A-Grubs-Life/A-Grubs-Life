@@ -1,10 +1,11 @@
-NAME   ,    DESC,       NORTH,  SOUTH, EAST , WEST
-GENESIS,You are in your birthplace... There are some leaves on the ground.. you also see a bird's nest close by, WOODS, LAKE, WEB, HOLE
-WOODS,THE WOODS ARE DARK [bird's nest close by], DEAD_END, GENESIS, DEAD_END, DEAD_END
-HOLE,A DECREPIT HOLE TO HIDE IN, DEAD_END, DEAD_END,GENESIS,DEAD_END
-LAKE,IT APPEARS THE LAKE IS RISING YOU HAVE 10 SECONDS TO EVACUATE [bird's nest close by],GENESIS,DEAD_END,DEAD_END,DEAD_END
-WEB,YOU ARE IN THE SPIDER'S DEN -AVOID TOUCHING THE WEBS!-,HILL,DEAD_END,FLOWERS,GENESIS
-HILL,I DON'T THINK THIS IS AN ORDINARY HILL -WATCH OUT FOR THE ANTS-,DEAD_END,WEB,BOSS,DEAD_END
-FLOWERS,SMELLS LIKE FLOWERS BZZZZZZ,BOSS,DEAD_END,TREE,WEB
-BOSS,YOU FIND THE SQUIRREL THAT TOOK YOUR MATE!,DEAD_END,FLOWERS,DEAD_END,HILL
-TREE,YOU CLIMB INTO THE TREE SAFE FROM BIRDS SPIDERS BEES ANTS AND YOU'VE DEFEATED THE SQUIRREL ,DEAD_END, DEAD_END, DEAD_END, FLOWERS
+NAME:DESC:NORTH:SOUTH:EAST:WEST
+GENESIS:Welcome to the world, tiny caterpillar! You have just emerged from an egg on a leaf. There are yummy leaves on the ground around you, and nearby, you can see a bird's nest. You are very hungry, so be sure to eat some leaves. You'll want plenty of strength when birds, squirrels, and other predators are nearby. Be sure to befriend the ants when you can -- otherwise, you'd better run!:WOODS:LAKE:WEB:HOLE
+START:There are yummy leaves on the ground around you, and nearby, you can see a bird's nest. You are very hungry.:WOODS:LAKE:WEB:HOLE
+WOODS:You've crawled into the dark woods, and it's hard to see. Baby birds chirp nearby, and the ominous sound of flapping wings tells you a bird is flying overhead. Watch out!:DEAD_END:START:DEAD_END:DEAD_END
+HOLE:You crawl into a hole and rest for a minute.:DEAD_END:DEAD_END:START:DEAD_END
+LAKE:The chirping of baby birds tells you there's a hungry momma bird nearby. But more worrying, the sound of water is coming closer -- the lake is rising, and you have 10 seconds to evacuate.:START:DEAD_END:DEAD_END:DEAD_END
+WEB:Oh no! It's a spider's den. Avoid touching the webs, and find a way out fast!:HILL:DEAD_END:FLOWERS:START
+HILL:You've found yourself on top of a hill, but beneath you, something is vibrating the dirt. Antennae peek out from a hole ahead of you. Ants!:DEAD_END:WEB:BOSS:DEAD_END
+FLOWERS:An explosion of blossoms surrounds you and bees buzz overhead. There are So. Many. Leaves. Omnomnom.:BOSS:DEAD_END:TREE:WEB
+BOSS:You find the squirrel that took your mate! Will you fight or run?:DEAD_END:FLOWERS:DEAD_END:HILL
+TREE:You climb into the tree, safe from birds, spiders, bees, and ants.:DEAD_END:DEAD_END:DEAD_END:FLOWERS

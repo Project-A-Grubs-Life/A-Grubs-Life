@@ -9,7 +9,8 @@ import java.util.Locale;
 public class KeyWordIdentifier {
 
     HashSet<String> keyWords;
-    public KeyWordIdentifier(){
+
+    public KeyWordIdentifier() {
         keyWords = new HashSet<>();
         keyWords.add("GO");
         keyWords.add("NORTH");
@@ -34,21 +35,22 @@ public class KeyWordIdentifier {
         keyWords.add("GODMODE");
         keyWords.add("CATERPILLAR");
         keyWords.add("HIDE");
+        keyWords.add("EXIT");
     }
 
 
     public ArrayList<String> identifyKewWords(ArrayList<String> parsedInput) {
-         ArrayList<String> result = new ArrayList();
-        if(parsedInput != null){
-            for(int i = 0; i < parsedInput.size(); i++){
-                if(!keyWords.contains(parsedInput.get(i))){
+        ArrayList<String> result = new ArrayList();
+        if (parsedInput != null) {
+            for (int i = 0; i < parsedInput.size(); i++) {
+                if (!keyWords.contains(parsedInput.get(i))) {
                     return result;
-                }else{
+                } else {
                     result.add(parsedInput.get(i).toUpperCase(Locale.ROOT));
                 }
             }
         }
 
-         return result;
+        return result;
     }
 }
