@@ -1,0 +1,25 @@
+{
+  "Items": {
+    "leaf": {
+      "health": 10,
+      "exp": 3,
+      "rarity": 1
+    },
+    "flower": {
+      "health": 20,
+      "exp": 3,
+      "rarity": 2
+    },
+    "cactus": {
+      "health": 0,
+      "exp": 3,
+      "rarity": 3
+    },
+    "pinecone": {
+      "health": 30,
+      "exp": 3,
+      "rarity": 2
+    }
+  }
+}
+
