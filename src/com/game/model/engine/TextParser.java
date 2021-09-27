@@ -7,7 +7,8 @@ import java.util.Locale;
 public class TextParser {
     private HashSet<String> verbs;
     private HashSet<String> nouns;
-    public TextParser(){
+
+    public TextParser() {
          super();
          populateVerbs();
          populateNouns();
@@ -31,7 +32,13 @@ public class TextParser {
         nouns.add("BIRD");
         nouns.add("RAT");
         nouns.add("CATERPILLAR");
-
+        nouns.add("UP");
+        nouns.add("DOWN");
+        nouns.add("SELF");
+        nouns.add("GODMODE");
+        nouns.add("ALL");
+        nouns.add("DEFENSES");
+        nouns.add("STINGING");
     }
 
     private void populateVerbs() {
@@ -42,13 +49,29 @@ public class TextParser {
         verbs.add("HIDE");
         verbs.add("ATTACK");
         verbs.add("HELP");
+        verbs.add("LOOK");
         verbs.add("START");
         verbs.add("RUN");
         verbs.add("GODMODE");
+        verbs.add("EXIT");
+        verbs.add("SHIELD");
+        verbs.add("USE");
+        verbs.add("CRYPSIS");
+        verbs.add("STINGING HAIRS");
+        verbs.add("HAIRS");
+        verbs.add("STINK");
+        verbs.add("NOXIOUS");
+        verbs.add("SPIT");
+        verbs.add("CLICK");
+        verbs.add("DEFENSE");
+        verbs.add("ALLIANCE");
+        verbs.add("ACID");
+        verbs.add("VOLUME");
+        verbs.add("DEFENSES");
     }
 
 
-    //If we dont get a viable verb and noun then we will pass null.
+    //If we don't get a viable verb and noun then we will pass null.
     public ArrayList<String> parseInput(String unParsedCommand) {
         String[] result;
         if(unParsedCommand != null) {
@@ -58,11 +81,9 @@ public class TextParser {
             for (String str : result) {
                 if (verbs.contains(str.toUpperCase(Locale.ROOT)) || nouns.contains(str.toUpperCase(Locale.ROOT))) {
                     list.add(str);
-                    if (list.size() == 2) {
-                        return list;
-                    }
                 }
             }
+            return list;
         }
         return null;
     }

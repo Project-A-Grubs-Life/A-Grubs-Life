@@ -1,54 +1,74 @@
 package com.game.model.engine;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Locale;
 
 //grab appropriate command (verb, noun)
 public class KeyWordIdentifier {
 
-    HashSet<String> keyWords;
-    public KeyWordIdentifier(){
-        keyWords = new HashSet<>();
-        keyWords.add("GO");
-        keyWords.add("NORTH");
-        keyWords.add("LEAF");
-        keyWords.add("EAT");
-        keyWords.add("SOUTH");
-        keyWords.add("EAST");
-        keyWords.add("WEST");
-        keyWords.add("ANT");
-        keyWords.add("TAME");
-        keyWords.add("HELP");
-        keyWords.add("COMBAT");
-        keyWords.add("START");
-        keyWords.add("GAME");
-        keyWords.add("SPIDER");
-        keyWords.add("BIRD");
-        keyWords.add("FLIES");
-        keyWords.add("RAT");
-        keyWords.add("SQUIRREL");
-        keyWords.add("BEE");
-        keyWords.add("ATTACK");
-        keyWords.add("GODMODE");
-        keyWords.add("CATERPILLAR");
-        keyWords.add("HIDE");
+    HashSet<String> keywords;
+
+    public KeyWordIdentifier() {
+        keywords = new HashSet<>();
+        keywords.add("GO");
+        keywords.add("NORTH");
+        keywords.add("LEAF");
+        keywords.add("EAT");
+        keywords.add("SOUTH");
+        keywords.add("EAST");
+        keywords.add("WEST");
+        keywords.add("ANT");
+        keywords.add("TAME");
+        keywords.add("HELP");
+        keywords.add("COMBAT");
+        keywords.add("START");
+        keywords.add("GAME");
+        keywords.add("SPIDER");
+        keywords.add("BIRD");
+        keywords.add("FLIES");
+        keywords.add("RAT");
+        keywords.add("SQUIRREL");
+        keywords.add("BEE");
+        keywords.add("ATTACK");
+        keywords.add("GODMODE");
+        keywords.add("CATERPILLAR");
+        keywords.add("HIDE");
+        keywords.add("EXIT");
+        keywords.add("SHIELD");
+        keywords.add("SELF");
+        keywords.add("USE");
+        keywords.add("CRYPSIS");
+        keywords.add("STINGING");
+        keywords.add("HAIRS");
+        keywords.add("STINK");
+        keywords.add("NOXIOUS");
+        keywords.add("SPIT");
+        keywords.add("CLICK");
+        keywords.add("DEFENSE");
+        keywords.add("ALLIANCE");
+        keywords.add("ACID");
+        keywords.add("VOLUME");
+        keywords.add("UP");
+        keywords.add("DOWN");
+        keywords.add("ALL");
+        keywords.add("DEFENSES");
     }
 
 
-    public ArrayList<String> identifyKewWords(ArrayList<String> parsedInput) {
-         ArrayList<String> result = new ArrayList();
-        if(parsedInput != null){
-            for(int i = 0; i < parsedInput.size(); i++){
-                if(!keyWords.contains(parsedInput.get(i))){
+    public ArrayList<String> identifyKeywords(ArrayList<String> parsedInput) {
+        ArrayList<String> result = new ArrayList();
+        parsedInput.size();
+        if (parsedInput != null) {
+            for (int i = 0; i < parsedInput.size(); i++) {
+                if (!keywords.contains(parsedInput.get(i))) {
                     return result;
-                }else{
+                } else {
                     result.add(parsedInput.get(i).toUpperCase(Locale.ROOT));
                 }
             }
         }
 
-         return result;
+        return result;
     }
 }

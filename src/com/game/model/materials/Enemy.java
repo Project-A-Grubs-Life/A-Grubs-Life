@@ -31,14 +31,9 @@ public class Enemy {
         this.health = health;
     }
 
-
     public String getName() {
         return name;
     }
-
-//    public void setName(String name) {
-//        this.name = name;
-//    }
 
     public int getHealth() {
         return health;

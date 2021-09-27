@@ -1,11 +1,8 @@
-/*
-    This class is a representation of a location in the game.
- */
+/**
+ *  This class is a representation of a location in the game.
+ **/
 package com.game.model.materials;
 
-import com.game.controller.Game;
-
-import java.util.Random;
 
 public class Location {
     private String name;
@@ -18,7 +15,7 @@ public class Location {
     private Enemy enemy;
 
 
-    public Location(String name, String description, String north, String south, String east, String west){
+    public Location(String name, String description, String north, String south, String east, String west) {
         this.name = name;
         this.description = description;
         this.north = north;
@@ -26,16 +23,10 @@ public class Location {
         this.east = east;
         this.west = west;
         setLeaf();
-
     }
 
     private void setLeaf() {
-        Random random = new Random();
-
-            this.leaf = new Leaf();
-    }
-    private void setRandomSpawnedEnemy(){
-
+        this.leaf = new Leaf();
     }
 
     public Leaf getLeaf(){
@@ -69,5 +60,6 @@ public class Location {
     public Enemy getEnemy() {
         return enemy;
     }
-    public void setEnemy(Enemy enemy){ this.enemy = enemy;}
+
+    public void setEnemy(Enemy enemy){this.enemy = enemy;}
 }

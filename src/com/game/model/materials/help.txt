@@ -1,0 +1,11 @@
+GENESIS:From here, you can <b>attack</b> the local wildlife if you're strong enough, <b>go</b> to another area on the map, <b>eat leaf</b> for strength, and more!
+WOODS:From here, you can <b>attack</b> the local wildlife if you're strong enough, <b>go</b> to another area on the map, <b>eat leaf</b> for strength, and more!
+HOLE:Not much to do in here but rest and strategize! You can <b>go</b> back to your birthplace.
+LAKE:From here, you can <b>attack</b> the local wildlife if you're strong enough, <b>go</b> to another area on the map, <b>eat leaf</b> for strength, and more!
+WEB:In the spider's web, you can be eaten, so, like <b>attack</b> the spider and maybe consider boot scooting out of here.
+HILL:You can <b>attack</b> the ants or, if you're strong enough, form an <b>ant alliance</b>. You can <b>go</b> to another location and <b>eat leaf</b>.
+FLOWERS:There are flowers everywhere, my dude. You can <b>eat</b> alllll day here. But also, you can <b>attack bee</b> or hide.
+BOSS:This is your BOSS BATTLE, my friend. Hope you've got some acid attacks in you.
+TREE:When you've beaten the boss and rescued your mate, you can return here to officially win the game!
+ALL:Actions to the left can apply to [self, bee, ant, spider, bird, flies, rat, squirrel, self, crypsis, stinging hairs, stink, noxious spit, click defense, acid attack].
+DEFENSES:You can defend yourself with crypsis (level 1), stinging hairs (2), stink attack (3), noxious spit (4), click defense (5), ant alliance (6), and acid attack (7).

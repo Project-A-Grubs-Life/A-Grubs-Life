@@ -1,0 +1,7 @@
+CRYPSIS:1:Your coloring offers you natural camouflage from predators.
+STINGING HAIRS:2:You have grown tiny hairs with irritating poison to injure and discourage predators.
+STINK ATTACK:3:You can now eject a violently bad smell that scares away predators.
+NOXIOUS SPIT:4:You have evolved the ability to eject noxious poison from your face. The loud clicking noise it makes is a further deterrent.
+CLICK DEFENSE:5:Your organs can make clicking sounds that scare off predators and block bat sonar.
+ANT ALLIANCE:6:You secrete a sweet liquid that ants find irresistible. They will fight to the death to protect you and your sweet, sweet nectar.
+ACID ATTACK:7:Spit acid on any target, you totally metal butterfly!
